@@ -4,7 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6350fda9-d39b-488e-a723-ea4215453e62" name="Changes" comment="" />
+    <list default="true" id="6350fda9-d39b-488e-a723-ea4215453e62" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/archivos/prueba.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/cup/traductorSemantico.cup" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/cup/traductorSemantico.cup" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/umg/proyectocompiladores/controller/CompiladorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/umg/proyectocompiladores/controller/CompiladorController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/jflex/traductorLexico.jflex" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/jflex/traductorLexico.jflex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/umg/proyectocompiladores/controller/CompiladorController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/umg/proyectocompiladores/controller/CompiladorController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/generated-sources/jflex/umg/compiladores/Lexer.java" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -20,7 +29,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/main" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -56,6 +65,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;G:/Mi unidad/UMG/7mo Semestre/Compiladores/DefinicionOrientadaPorLaSintaxis&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -95,6 +105,14 @@
       <workItem from="1685480984562" duration="2998000" />
       <workItem from="1685500471816" duration="1120000" />
       <workItem from="1685501604971" duration="3705000" />
+      <workItem from="1685544809844" duration="49000" />
+      <workItem from="1685545164104" duration="4441000" />
+      <workItem from="1685573396136" duration="1979000" />
+      <workItem from="1685577464672" duration="10581000" />
+      <workItem from="1685592762988" duration="10201000" />
+      <workItem from="1685603047776" duration="595000" />
+      <workItem from="1685628247809" duration="6844000" />
+      <workItem from="1685683641256" duration="342000" />
     </task>
     <servers />
   </component>
