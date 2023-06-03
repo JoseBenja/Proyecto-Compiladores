@@ -343,7 +343,7 @@ espacios_blanco = [\r|\n|\r\n| |\t]
               + " columna: "
               + yychar
               + " fila: "
-              + yyline ); return symbol(sym.SLASH_INVERTIDO, yytext());}
+              + yyline ); return symbol(sym.DIVIDIR, yytext());}
 
 "&&"        { System.out.println("Lexema: "
               + yytext()

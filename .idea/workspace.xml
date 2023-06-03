@@ -5,14 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6350fda9-d39b-488e-a723-ea4215453e62" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/archivos/prueba.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/archivos/prueba.java" beforeDir="false" afterPath="$PROJECT_DIR$/archivos/prueba.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/cup/traductorSemantico.cup" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/cup/traductorSemantico.cup" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/umg/proyectocompiladores/controller/CompiladorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/umg/proyectocompiladores/controller/CompiladorController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/jflex/traductorLexico.jflex" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/jflex/traductorLexico.jflex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/umg/proyectocompiladores/controller/CompiladorController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/umg/proyectocompiladores/controller/CompiladorController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/generated-sources/jflex/umg/compiladores/Lexer.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,6 +77,7 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\VICTUS\IntelIJIDEA_proyectos\Proyecto-Compiladores\archivos" />
       <recent name="C:\Users\VICTUS\IntelIJIDEA_proyectos\Proyecto-Compiladores\src\main\resources\static\js\js" />
     </key>
   </component>
@@ -112,7 +109,8 @@
       <workItem from="1685592762988" duration="10201000" />
       <workItem from="1685603047776" duration="595000" />
       <workItem from="1685628247809" duration="6844000" />
-      <workItem from="1685683641256" duration="342000" />
+      <workItem from="1685683641256" duration="1151000" />
+      <workItem from="1685754315230" duration="12178000" />
     </task>
     <servers />
   </component>
