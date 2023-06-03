@@ -11,7 +11,7 @@ terminal SIGUIENTE_DOBLE, SIGUIENTE_BOOL, PRIVADO, PUBLICO, ARGS, MAIN, STATIC;
 terminal Integer DIGITO;
 terminal String IDENTIFICADOR;
 
-non terminal inicio, tipo_imprimir, tipo_metodo, imprimir, metodo, main, instancia, funcionalidad, operador, variables_declarada, aritmetica, funcionalidad_metodo, llamada_metodo, mas_funcionalidad, declarar, parametros, estado_bool, concatenar, digito, retorno_metodo;
+non terminal inicio, tipo_imprimir, tipo_metodo, imprimir, metodo, main, funcionalidad, operador, aritmetica, declarar, parametros, estado_bool, concatenar, retorno_metodo;
 
 start with inicio;
 

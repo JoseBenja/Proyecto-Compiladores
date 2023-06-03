@@ -24,25 +24,30 @@ public class CompiladorController {
 
     StringBuilder builder = new StringBuilder();
 
-    String nomArchivoTexto = "C:/Users/VICTUS/Archivo-Compilador/codigoCompilar.java";
+    String nomArchivo = "codigoCompilar.java";
+    String ruta = "/archivo/";
 
     @PostMapping(value = "/recibirJava")
     public void recibirJava(@RequestParam("txtJava") String textoJava,
-                            @RequestParam("fileJava")MultipartFile fileJava) {
+                            @RequestParam("fileJava") MultipartFile fileJava) {
 
-        builder.append(System.getProperty("user.home"));
-        builder.append(File.separator);
-        builder.append("Archivo-Compilador");
+        builder.append(ruta);
 
         File folder = new File(builder.toString());
         if (!folder.exists()) {
             folder.mkdirs();
         }
 
+
+
         if (!textoJava.isEmpty()) {
+            System.out.println("Se recibio Texto");
             leerTexto(textoJava);
         } else if (!fileJava.isEmpty()) {
+            System.out.println("Se recibio Archivo");
             leerArchivo(fileJava);
+        } else if (!textoJava.isEmpty() && !fileJava.isEmpty()) {
+            System.out.println("Solo debe ingresar un medio");
         } else {
             System.out.println("No se recibio ninguna entrada");
         }
@@ -57,18 +62,20 @@ public class CompiladorController {
             throw new RuntimeException(e);
         }
 
-        Path path = Paths.get(builder.append(File.separator) + file.getOriginalFilename());
+        Path path = Paths.get(ruta + nomArchivo);
         try {
             Files.write(path, bytes);
+            compilarCup();
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
     }
 
     public void leerTexto(String txtJava) {
-        try (BufferedWriter escritor = new BufferedWriter(new FileWriter(nomArchivoTexto))) {
+        try (BufferedWriter escritor = new BufferedWriter(new FileWriter(nomArchivo))) {
             // Escribe la entrada de texto en el archivo
             escritor.write(txtJava);
+            System.out.printf("Escritor  " + escritor);
             compilarCup();
         } catch (IOException e) {
             System.out.println("Ocurrió un error al crear el archivo: " + e.getMessage());
@@ -77,7 +84,7 @@ public class CompiladorController {
 
     public void compilarCup() {
         try {
-            Reader reader = new FileReader("archivos/prueba.java");
+            Reader reader = new FileReader(ruta +  nomArchivo);
             parser p = new parser(new Lexer(reader));
             Object result = p.parse().value;
         } catch (FileNotFoundException ex) {
