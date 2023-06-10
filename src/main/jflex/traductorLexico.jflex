@@ -170,6 +170,14 @@ espacios_blanco = [\r|\n|\r\n| |\t]
               + yychar
               + " fila: "
               + yyline ); return symbol(sym.ROMPER, yytext());}
+
+"default"         { System.out.println("Lexema: "
+              + yytext()
+              + " columna: "
+              + yychar
+              + " fila: "
+              + yyline ); return symbol(sym.POR_DEFECTO, yytext());}
+
 "Scanner"         { System.out.println("Lexema: "
               + yytext()
               + " columna: "

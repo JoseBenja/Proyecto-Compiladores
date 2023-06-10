@@ -6,7 +6,13 @@
   <component name="ChangeListManager">
     <list default="true" id="6350fda9-d39b-488e-a723-ea4215453e62" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/codigoCompilar.java" beforeDir="false" afterPath="$PROJECT_DIR$/codigoCompilar.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/codigoCompilar.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/cup/traductorSemantico.cup" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/cup/traductorSemantico.cup" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/umg/proyectocompiladores/controller/CompiladorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/umg/proyectocompiladores/controller/CompiladorController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/jflex/traductorLexico.jflex" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/jflex/traductorLexico.jflex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/umg/proyectocompiladores/controller/CompiladorController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/umg/proyectocompiladores/controller/CompiladorController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/js/index.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -113,6 +119,14 @@
       <workItem from="1685804995526" duration="1175000" />
       <workItem from="1685834002781" duration="7000" />
       <workItem from="1685847338441" duration="204000" />
+      <workItem from="1686005435000" duration="274000" />
+      <workItem from="1686010520466" duration="213000" />
+      <workItem from="1686011907004" duration="79000" />
+      <workItem from="1686097285746" duration="3713000" />
+      <workItem from="1686197614006" duration="5434000" />
+      <workItem from="1686277722707" duration="4848000" />
+      <workItem from="1686332808331" duration="5542000" />
+      <workItem from="1686362056716" duration="4845000" />
     </task>
     <servers />
   </component>

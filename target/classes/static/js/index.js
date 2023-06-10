@@ -1,3 +1,0 @@
-function leerJava() {
-    let datos = {}
-}
