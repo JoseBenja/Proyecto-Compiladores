@@ -75,7 +75,7 @@ public class CompiladorController {
     }
 
     public ArrayList<String> leerTexto(String txtJava) {
-        try (BufferedWriter escritor = new BufferedWriter(new FileWriter(nomArchivo))) {
+        try (BufferedWriter escritor = new BufferedWriter(new FileWriter("C:/Users/VICTUS//IntelIJIDEA_proyectos/Proyecto-Compiladores/codigoCompilar.java"))) {
             // Escribe la entrada de texto en el archivo
             escritor.write(txtJava);
             System.out.printf("Escritor  " + escritor);
