@@ -22,23 +22,23 @@ non terminal inicio, tipo_imprimir, tipo_metodo, imprimir, metodo, main, funcion
 
 start with inicio;
 
-inicio                  ::= privacidad CLASE:clase_val IDENTIFICADOR:nom_clase_val LLAVE_ABRE:llave_abre_val main LLAVE_CIERRA:llave_cierra_val                                            {: RESULT =   clase_val.toString() ; RESULT2 = nom_clase_val.toString() ; resultados.add(RESULT); resultados.add(RESULT2); RESULT3 = llave_abre_val.toString(); resultados.add(RESULT3); RESULT4 = llave_cierra_val.toString(); resultados.add(RESULT4);:}
-                        |   privacidad CLASE:clase_val IDENTIFICADOR:nom_clase_val LLAVE_ABRE:llave_abre_val funcionalidad main LLAVE_CIERRA:llave_cierra_val                              {: RESULT =   clase_val.toString() ; RESULT2 = nom_clase_val.toString() ; resultados.add(RESULT); resultados.add(RESULT2); RESULT3 = llave_abre_val.toString(); resultados.add(RESULT3); RESULT4 = llave_cierra_val.toString(); resultados.add(RESULT4);:};
+inicio                  ::= privacidad CLASE:clase_val IDENTIFICADOR:nom_clase_val LLAVE_ABRE:llave_abre_val main LLAVE_CIERRA:llave_cierra_val                                            {: RESULT =  "class" ; RESULT2 = nom_clase_val.toString() ; resultados.add(RESULT); resultados.add(RESULT2); RESULT3 = ":"; resultados.add(RESULT3); RESULT4 = llave_cierra_val.toString(); resultados.add(RESULT4);:}
+                        |   privacidad CLASE:clase_val IDENTIFICADOR:nom_clase_val LLAVE_ABRE:llave_abre_val funcionalidad main LLAVE_CIERRA:llave_cierra_val                              {: RESULT =  "class" ; RESULT2 = nom_clase_val.toString() ; resultados.add(RESULT); resultados.add(RESULT2); RESULT3 = ":"; resultados.add(RESULT3); RESULT4 = llave_cierra_val.toString(); resultados.add(RESULT4);:};
 
-main                    ::= privacidad STATIC:static_val VACIO:vacio_val MAIN:main_val PARENTESIS_ABRE:parentesis_abre_val declarar CORCHETE_ABRE CORCHETE_CIERRA ARGS PARENTESIS_CIERRA:parentesis_cierra_val LLAVE_ABRE:llave_abre_val funcionalidad LLAVE_CIERRA:llave_cierra_val             {: RESULT = static_val.toString(); resultados.add(RESULT);:}
-                        |   privacidad STATIC:static_val VACIO:vacio_val MAIN:main_val PARENTESIS_ABRE:parentesis_abre_val declarar CORCHETE_ABRE CORCHETE_CIERRA ARGS PARENTESIS_CIERRA:parentesis_cierra_val LLAVE_ABRE:llave_abre_val funcionalidad LLAVE_CIERRA:llave_cierra_val metodo      {: RESULT = main_val.toString(); :}
-                        |   privacidad STATIC:static_val VACIO:vacio_val MAIN:main_val PARENTESIS_ABRE:parentesis_abre_val declarar CORCHETE_ABRE CORCHETE_CIERRA ARGS PARENTESIS_CIERRA:parentesis_cierra_val LLAVE_ABRE:llave_abre_val /* ε */ LLAVE_CIERRA:llave_cierra_val             {: RESULT = main_val.toString(); :}
-                        |   privacidad STATIC:static_val VACIO:vacio_val MAIN:main_val PARENTESIS_ABRE:parentesis_abre_val declarar CORCHETE_ABRE CORCHETE_CIERRA ARGS PARENTESIS_CIERRA:parentesis_cierra_val LLAVE_ABRE:llave_abre_val /* ε */ LLAVE_CIERRA:llave_cierra_val metodo      {: RESULT = main_val.toString(); :};
+main                    ::= privacidad STATIC:static_val VACIO:vacio_val MAIN:main_val PARENTESIS_ABRE:parentesis_abre_val declarar CORCHETE_ABRE CORCHETE_CIERRA ARGS PARENTESIS_CIERRA:parentesis_cierra_val LLAVE_ABRE:llave_abre_val funcionalidad LLAVE_CIERRA:llave_cierra_val             {: RESULT = "def main"; resultados.add(RESULT); RESULT2 = ":"; resultados.add(RESULT2);:}
+                        |   privacidad STATIC:static_val VACIO:vacio_val MAIN:main_val PARENTESIS_ABRE:parentesis_abre_val declarar CORCHETE_ABRE CORCHETE_CIERRA ARGS PARENTESIS_CIERRA:parentesis_cierra_val LLAVE_ABRE:llave_abre_val funcionalidad LLAVE_CIERRA:llave_cierra_val metodo      {: RESULT = "def main"; resultados.add(RESULT); RESULT2 = ":"; resultados.add(RESULT2);:}
+                        |   privacidad STATIC:static_val VACIO:vacio_val MAIN:main_val PARENTESIS_ABRE:parentesis_abre_val declarar CORCHETE_ABRE CORCHETE_CIERRA ARGS PARENTESIS_CIERRA:parentesis_cierra_val LLAVE_ABRE:llave_abre_val /* ε */ LLAVE_CIERRA:llave_cierra_val                   {: RESULT = "def main"; resultados.add(RESULT); RESULT2 = ":"; resultados.add(RESULT2);:}
+                        |   privacidad STATIC:static_val VACIO:vacio_val MAIN:main_val PARENTESIS_ABRE:parentesis_abre_val declarar CORCHETE_ABRE CORCHETE_CIERRA ARGS PARENTESIS_CIERRA:parentesis_cierra_val LLAVE_ABRE:llave_abre_val /* ε */ LLAVE_CIERRA:llave_cierra_val metodo            {: RESULT = "def main"; resultados.add(RESULT); RESULT2 = ":"; resultados.add(RESULT2);:};
 
-declarar                ::= TEXTO:tipo_dato_val                                         {: System.out.println("str : " + tipo_dato_val.toString()); :}
-                        |   INTEGER:tipo_dato_val                                       {: System.out.println("int : " + tipo_dato_val.toString()); :}
-                        |   LONG:tipo_dato_val                                          {: System.out.println("int : " + tipo_dato_val.toString()); :}
-                        |   FLOAT:tipo_dato_val                                         {: System.out.println("float : " + tipo_dato_val.toString()); :}
-                        |   DOBLE:tipo_dato_val                                         {: System.out.println("float : " + tipo_dato_val.toString()); :}
-                        |   SHORT:tipo_dato_val                                         {: System.out.println("float : " + tipo_dato_val.toString()); :}
-                        |   BOOL:tipo_dato_val                                          {: System.out.println("bool : " + tipo_dato_val.toString()); :}
+declarar                ::= TEXTO:tipo_dato_val                                         {: RESULT = "str()"; resultados.add(RESULT); :}
+                        |   INTEGER:tipo_dato_val                                       {: RESULT = "int()"; resultados.add(RESULT); :}
+                        |   LONG:tipo_dato_val                                          {: RESULT = "int()"; resultados.add(RESULT); :}
+                        |   FLOAT:tipo_dato_val                                         {: RESULT = "float()"; resultados.add(RESULT); :}
+                        |   DOBLE:tipo_dato_val                                         {: RESULT = "float()"; resultados.add(RESULT); :}
+                        |   SHORT:tipo_dato_val                                         {: RESULT = "int()"; resultados.add(RESULT); :}
+                        |   BOOL:tipo_dato_val                                          {: RESULT = "bool()"; resultados.add(RESULT); :}
                         |   VACIO:tipo_dato_eval
-                        |   declarar CORCHETE_ABRE CORCHETE_CIERRA:tipo_dato_val        {: System.out.println("list : " + tipo_dato_val.toString()); :};
+                        |   declarar CORCHETE_ABRE CORCHETE_CIERRA:tipo_dato_val        {: RESULT = "str()"; resultados.add(RESULT); :};
 
 parametros              ::= declarar IDENTIFICADOR:identificador_val
                         |   declarar IDENTIFICADOR:identificador_val COMA parametros
